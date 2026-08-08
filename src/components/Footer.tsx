@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Twitter, Youtube } from 'lucide-react';
+import { Instagram, Twitter, Youtube, Linkedin } from 'lucide-react';
 
 export function Footer() {
   const scrollTo = (id: string) => {
@@ -47,13 +47,16 @@ export function Footer() {
             The elite content acquisition machine for founders, coaches, and consultants. You only press record, we handle the rest.
           </p>
           <div className="flex items-center gap-4">
-            <a href="#" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-neutral-800 transition-colors text-neutral-400 hover:text-white">
+            <a href="https://www.linkedin.com/in/sanchitpatel03" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-neutral-800 transition-colors text-neutral-400 hover:text-white">
+              <Linkedin className="w-4 h-4" />
+            </a>
+            <a href="https://www.instagram.com/igsanchitpatel/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-neutral-800 transition-colors text-neutral-400 hover:text-white">
               <Instagram className="w-4 h-4" />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-neutral-800 transition-colors text-neutral-400 hover:text-white">
+            <a href="https://x.com/sanchitpatelonx" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-neutral-800 transition-colors text-neutral-400 hover:text-white">
               <Twitter className="w-4 h-4" />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-neutral-800 transition-colors text-neutral-400 hover:text-white">
+            <a href="https://www.youtube.com/@therealsanchitpatel" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-neutral-800 transition-colors text-neutral-400 hover:text-white">
               <Youtube className="w-4 h-4" />
             </a>
           </div>
