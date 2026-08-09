@@ -50,7 +50,7 @@ export function Footer() {
             <a href="https://www.linkedin.com/in/sanchitpatel03" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-neutral-800 transition-colors text-neutral-400 hover:text-white">
               <Linkedin className="w-4 h-4" />
             </a>
-            <a href="https://www.instagram.com/igsanchitpatel/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-neutral-800 transition-colors text-neutral-400 hover:text-white">
+            <a href="https://www.instagram.com/quantmedia.co/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-neutral-800 transition-colors text-neutral-400 hover:text-white">
               <Instagram className="w-4 h-4" />
             </a>
             <a href="https://x.com/sanchitpatelonx" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-neutral-800 transition-colors text-neutral-400 hover:text-white">
