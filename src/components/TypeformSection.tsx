@@ -48,12 +48,31 @@ export function TypeformSection() {
     }, 300);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!contactInfo.trim()) return;
     
-    // Here you would typically send the data to your backend
-    console.log('Submitted Data:', { answers, contactMethod, contactInfo });
+    try {
+      const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT;
+      if (endpoint) {
+        await fetch(endpoint, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            ...answers,
+            contactMethod,
+            contactInfo,
+          }),
+        });
+      } else {
+        console.warn('VITE_FORMSPREE_ENDPOINT is not defined');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
+    
     setIsSubmitted(true);
   };
 
